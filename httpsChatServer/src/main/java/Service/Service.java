@@ -12,36 +12,47 @@ import java.util.List;
 public class Service implements Runnable {
 
     private String Message;
+    private String Content;
     private String ClientID;
     private String IP;
+    private String[] Anatomy;
     ClientServices clientServices;
+
+    public static final String[] commands = {"connect","send","list"};
+    private String Command;
+
     public Service(String message, String IP) {
         Message = message;
-        clientServices = ClientServices.getInstance();
-        String command = Message.split(" ")[0];
-        System.out.println("COMMAND = " + command);
-        if(!command.equals("connect")){
+        Anatomy = Message.split(" ");
+        Command = Anatomy[0];
+        Content = Anatomy[1];
+
+        if(!Command.equals(commands[0])){
             ClientID = clientServices.resolve(IP);
         }
+
         this.IP = IP;
 
-        System.out.println("Class Service Constructed with Params: \nMessage: " + Message + "\nIP: "+ this.IP +"\n");
+        System.out.println("Class Service Constructed with Params:\nMessage: " + Message + "\nIP: "+ this.IP +"\n");
     }
 
     public void run() {
-        System.out.println("Service Thread started");
-        String[] Parts = Message.split(" ");
-        System.out.println("Run Anatomy: "+ Arrays.toString(Parts));
-        System.out.println("CIR" + Parts[0]);
-        if(Parts[0].equals("connect")){
-            connect(Parts);
+        clientServices = ClientServices.getInstance();
+        if(Command.equals(commands[0])){
+            String name = Anatomy[1];
+            int port = Integer.parseInt(Anatomy[2]);
+            connect(name,port);
         }
-        if (Parts[0].equals("send")){
-            send(Message);
+        else if (Command.equals(commands[1])){
+            send(Message.split("-")[0]);
         }
-        if (Parts[0].equals("list")){
+        else if (Command.equals(commands[2])){
             list();
         }
+        else {
+            clientServices.message(ClientID,"Unrecognised Command","Server");
+        }
+
     }
 
     public void list(){
@@ -58,18 +69,16 @@ public class Service implements Runnable {
 
         System.out.println("Messaging Initiated");
         clientServices = ClientServices.getInstance();
-        clientServices.message(ClientID, list, "");
+        clientServices.message(ClientID, list, "Server");
 
     }
 
-    public void connect(String[] Params){
-        System.out.println("Service Method Connect Fired");
-        System.out.println("Service Method Connect Creating class with params : \nName: " + Params[1] +"\nIP: "+IP +"\nPort: " + Integer.parseInt(Params[2]));
+    public void connect(String name, int port){
         try {
-
-            Client c = new Client(Params[1], IP, Integer.parseInt(Params[2]));
+            //Client client = new Client(Params[1], IP, Integer.parseInt(Params[2]));
+            Client client = new Client(name, IP, port);
             clientServices = ClientServices.getInstance();
-            clientServices.add(c);
+            clientServices.add(client);
         }
         catch (Exception e){
             System.out.println(e.getMessage());
@@ -77,8 +86,6 @@ public class Service implements Runnable {
     }
 
     public void send(String Message){
-
-        //Send the message to the client
         try {
             System.out.println("Messaging Initiated");
             String Receiver = Message.split("-")[1];

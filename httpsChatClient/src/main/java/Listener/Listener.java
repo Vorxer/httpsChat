@@ -1,4 +1,4 @@
-package Connection;
+package Listener;
 
 import javax.net.SocketFactory;
 import java.io.ObjectInputStream;
@@ -18,14 +18,15 @@ import java.security.KeyStore;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-public class Listner implements Runnable {
+
+public class Listener implements Runnable {
 
 
     private int Port;
 
-    private static ServerSocket server;
+    static String standardResponse = "Message Received";
 
-    public Listner(int port) {
+    public Listener(int port) {
         Port = port;
     }
 
@@ -41,7 +42,7 @@ public class Listner implements Runnable {
             // initialise the keystore
             char[] password = "supermarine".toCharArray();
             KeyStore ks = KeyStore.getInstance("JKS");
-            FileInputStream fis = new FileInputStream("/home/vanguard/Java/httpsChatClient/src/myKeyStore.jks");
+            FileInputStream fis = new FileInputStream("myKeyStore.jks");
             ks.load(fis, password);
 
             // setup the key manager factory
@@ -89,10 +90,11 @@ public class Listner implements Runnable {
                 // parse request
                 URI requestedUri = he.getRequestURI();
                 String command = requestedUri.getRawQuery().replace("+", " ").split("=")[1];
-                System.out.println(command);
-                he.sendResponseHeaders(200, "Command Received".length());
+                String[] message= command.split("%sender%");
+                System.out.println("[" + message[1] + "] : " + message[2]);
+                he.sendResponseHeaders(200, standardResponse.length());
                 OutputStream os = he.getResponseBody();
-                os.write("Command Received".toString().getBytes());
+                os.write(standardResponse.toString().getBytes());
                 os.close();
 
             } catch (Exception e) {

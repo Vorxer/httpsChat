@@ -75,8 +75,8 @@ public class Client {
     public void sendMessage(String message, String sender) throws Exception{
         if(!message.equals("")) {
             message = message.replace(" ", "+");
-            System.out.println(httpsURL + "?send=" + message +"+from+" + sender);
-            URL requestURL = new URL(httpsURL + "?send=" + message+ "+from+" + sender);
+            System.out.println(httpsURL + "?send=" + message +"+%sender%" + sender);
+            URL requestURL = new URL(httpsURL + "?send=" + message+ "+%sender%" + sender);
             HttpsURLConnection conn = (HttpsURLConnection) requestURL.openConnection();
             InputStream is = conn.getInputStream();
             InputStreamReader isr = new InputStreamReader(is);

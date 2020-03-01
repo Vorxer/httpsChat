@@ -14,10 +14,10 @@ public class ChatClient {
             if(connected){
                 System.out.println("Ready:");
                 String message = input.nextLine();
-                connection.message(message);
+                connection.request(message);
             }
             else{
-                System.out.println("No Connection Found \n Enter Server IP Address");
+                System.out.println("No Connection Found \nEnter Server IP Address");
                 String IP = input.nextLine();
                 System.out.println("Enter you addressing name");
                 name = input.nextLine();

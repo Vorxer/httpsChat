@@ -1,7 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28e32ef9-62ff-4b43-91f1-8bfd9fc5c827" name="Default Changelist" comment="" />
+    <list default="true" id="28e32ef9-62ff-4b43-91f1-8bfd9fc5c827" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myKeyStore.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myTrustStore.jts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mykey1.cert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/myKeyStore.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/myTrustStore.jts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mykey1.cert" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Listener/Listener$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Listener/Listener$send.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Listener/Listener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../httpsChatServer/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../httpsChatServer/src/main/java/myKeyStore.jks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../httpsChatServer/src/main/java/myTrustStore.jts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../httpsChatServer/src/main/java/mykey1.cert" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ChatClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ChatClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Client2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Connection/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Connection/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Connection/Listner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Listener/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/SClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/prototype/SSLPrototype.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myKeyStore.jks" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/myTrustStore.jts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mykey1.cert" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ChatClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ChatClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Client2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Connection/Connection$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Connection/Connection$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Connection/Connection$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Connection/Connection$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Connection/Connection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Connection/Connection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Connection/Listner$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Connection/Listner$send.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Connection/Listner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/prototype/SClient$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/prototype/SClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/prototype/SSLPrototype$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/prototype/SSLPrototype$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/prototype/SSLPrototype.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/src/main/java/Clients/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/src/main/java/Clients/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/src/main/java/Clients/ClientServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/src/main/java/Clients/ClientServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/src/main/java/Prototype/ServerPrototype.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/src/main/java/Prototype/SimpleHTTPSServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/src/main/java/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/src/main/java/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/src/main/java/Service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/src/main/java/Service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/Clients/Client$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/target/classes/Clients/Client$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/Clients/Client$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/target/classes/Clients/Client$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/Clients/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/target/classes/Clients/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/Clients/ClientServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/target/classes/Clients/ClientServices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/Prototype/ServerPrototype$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/Prototype/ServerPrototype$getTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/Prototype/ServerPrototype.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/Server$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/target/classes/Server$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/Server$message.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/target/classes/Server.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/Service/Service.class" beforeDir="false" afterPath="$PROJECT_DIR$/../httpsChatServer/target/classes/Service/Service.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/SimpleHTTPSServer$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/SimpleHTTPSServer$MyHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/SimpleHTTPSServer$getMyMessage.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/SimpleHTTPSServer$listUsers.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/SimpleHTTPSServer$registerUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/SimpleHTTPSServer$sendMessages.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpsChatServer/target/classes/SimpleHTTPSServer.class" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +81,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -22,6 +92,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1YJpKYxARQGrQKRfUgcPqdk1903" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -29,6 +100,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../httpsChatServer" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -94,22 +167,30 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="1030" y="215" width="800" height="684" key="#Project_Structure/0.27.1920.1053@0.27.1920.1053" timestamp="1582676051368" />
-    <state width="1878" height="358" key="GridCell.Tab.0.bottom" timestamp="1582690441194">
+    <state x="511" y="27" width="888" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583027643796">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1582690441194" />
-    <state width="1878" height="358" key="GridCell.Tab.0.center" timestamp="1582690441194">
+    <state x="511" y="27" width="888" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1920.1053@0.27.1920.1053" timestamp="1583027643796" />
+    <state x="710" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1583027144958">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1582690441194" />
-    <state width="1878" height="358" key="GridCell.Tab.0.left" timestamp="1582690441194">
+    <state x="710" y="311" width="424" height="491" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1583027144958" />
+    <state width="1878" height="358" key="GridCell.Tab.0.bottom" timestamp="1583032199717">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1582690441194" />
-    <state width="1878" height="358" key="GridCell.Tab.0.right" timestamp="1582690441194">
+    <state width="1878" height="358" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1583032199717" />
+    <state width="1878" height="358" key="GridCell.Tab.0.center" timestamp="1583032199717">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state width="1878" height="358" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1582690441194" />
+    <state width="1878" height="358" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1583032199717" />
+    <state width="1878" height="358" key="GridCell.Tab.0.left" timestamp="1583032199716">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1583032199716" />
+    <state width="1878" height="358" key="GridCell.Tab.0.right" timestamp="1583032199717">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="358" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1583032199717" />
     <state width="1878" height="342" key="GridCell.Tab.1.bottom" timestamp="1582677033035">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>

@@ -1,11 +1,10 @@
 package Connection;
 
+import Listener.Listener;
+
 import javax.net.ssl.*;
 import java.io.*;
-import java.net.InetAddress;
-import java.net.Socket;
 import java.net.URL;
-import java.net.UnknownHostException;
 import java.security.cert.X509Certificate;
 
 public class Connection{
@@ -13,7 +12,6 @@ public class Connection{
     private String IP;
     private String ID;
     private String httpsURL = "";
-    private URL url = null;
 
     Integer ServerPort = 8000;
     public void connect(String IP, String ID, int port) throws Exception{
@@ -64,33 +62,38 @@ public class Connection{
 
         receive(port);
         Thread.sleep(3000);
-        message("connect " + ID + " " + port);
+        request("connect " + ID + " " + port);
     }
 
-    public void receive(int port) throws Exception{
-
-        Listner listner = new Listner(port);
-        Thread thread = new Thread(listner);
-        thread.start();
-
+    public void receive(int port){
+        Listener listener = new Listener(port);
+        Thread ServerThread = new Thread(listener);
+        ServerThread.start();
     }
 
 
-    public void message(String command) throws Exception{
-        System.out.println("Message Received");
+    public void request(String command) throws Exception{
         if(!command.equals("")) {
             command = command.replace(" ", "+");
-            System.out.println(httpsURL + "?message=" + command);
+
             URL requestURL = new URL(httpsURL + "?message=" + command);
+
+
             HttpsURLConnection conn = (HttpsURLConnection) requestURL.openConnection();
-            InputStream is = conn.getInputStream();
-            InputStreamReader isr = new InputStreamReader(is);
-            BufferedReader br = new BufferedReader(isr);
+
+            InputStream inputStream = conn.getInputStream();
+            InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
+            BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
+
             String inputLine;
-            while ((inputLine = br.readLine()) != null) {
+
+            while ((inputLine = bufferedReader.readLine()) != null) {
                 System.out.println(inputLine);
             }
-            br.close();
+
+            bufferedReader.close();
+            inputStreamReader.close();
+            inputStream.close();
         }
     }
 
